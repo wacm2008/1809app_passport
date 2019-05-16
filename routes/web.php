@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//app注册
+$router->post('/test/reg','TestController@reg');
+//app登录
+$router->post('/test/log','TestController@log');
